@@ -86,7 +86,6 @@ section .title::after{
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
     color: #fff;
@@ -159,14 +158,11 @@ section .title::after{
     display: flex;
     height: 100vh;
     color: rgb(242, 241, 241);
-    min-height: 500px;
+    min-height: 500px;[]
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    line-height: 1.2;
 }
 .home .max-width{
   width: 100%;
@@ -178,25 +174,19 @@ section .title::after{
 
 .home .home-content.text-1{
     font-size: 25px;
-    margin-left: -15px;
-    padding-left: 400px;
-    margin-bottom: 5px;
-    line-height: 1.2;
 }
 .home .home-content .text-2{
     font-size: 140px;
     font-weight: 700;
     margin-left: -3px;
-    padding-left: 450px;
     font-family: 'Poppins', sans-serif;
-    margin: 0;
-    line-height: 1.1;
+    margin-left: 50px;
+
 }
 .home .home-content .text-3{
     font-size: 30px;
-    margin-top: 5px;
-    padding-left: 600px;
-    line-height: 1.3;
+    margin: 5px 0;
+    padding-left: 45px;
 }
 .home .home-content .text-3 span{
     color: rgb(113, 111, 241);
@@ -213,9 +203,6 @@ section .title::after{
     border-radius: 20px;
     border: 2px solid rgb(252, 249, 250);
     transition: all 0.3s ease;
-    margin-left: 50px; /* Move the button to the right */
-    position: relative;
-    top: 10px; /* Adjust vertical alignment if needed */
 }
 
 .home .home-content a:hover {
@@ -280,6 +267,53 @@ section .title::after{
 .skills-icons img:hover {
     transform: scale(1.2); /* Larger scale effect on hover */
     filter: brightness(1) invert(0); /* Reverts filter to original on hover */
+}
+
+/* Tablets and Medium Screens */
+@media (max-width: 768px) {
+    .skills {
+        padding: 20px 25px; /* Adjust padding for smaller space */
+        margin: 15px auto; /* Center align and adjust spacing */
+        width: 90%; /* Expand to fit most of the screen width */
+    }
+
+    .skills p {
+        font-size: 18px; /* Slightly smaller font for better fit */
+        margin-bottom: 12px;
+    }
+
+    .skills-icons {
+        gap: 15px; /* Reduce gap between icons */
+        justify-content: center; /* Center align icons */
+    }
+
+    .skills-icons img {
+        width: 55px; /* Reduce icon size for smaller screens */
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 480px) {
+    .skills {
+        padding: 15px 20px; /* Compact padding */
+        margin: 10px auto; /* Further center and adjust spacing */
+        width: 100%; /* Occupy full width */
+    }
+
+    .skills p {
+        font-size: 16px; /* Smaller font for compact view */
+        margin-bottom: 10px;
+    }
+
+    .skills-icons {
+        flex-direction: column; /* Stack icons vertically */
+        align-items: center; /* Center align vertically */
+        gap: 10px; /* Reduce gap for a compact view */
+    }
+
+    .skills-icons img {
+        width: 50px; /* Further reduce icon size */
+    }
 }
 
 
