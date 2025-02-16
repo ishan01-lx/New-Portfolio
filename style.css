@@ -67,7 +67,7 @@ section .title::before{
     left: 50%;
     width: 180px;
     height: 3px;
-    background: #111;
+    background: #c6c4c4;
     transform: translateX(-50%);
 }
 section .title::after{
@@ -75,9 +75,9 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: crimson;
+    color: white;
     padding: 0 5px;
-    background: #fff;
+    background: linear-gradient(145deg, #000428, #227ccb);
     transform: translateX(-50%);
 }
 
@@ -152,7 +152,7 @@ section .title::after{
     filter: brightness(90%);
 }
 
-
+/* home section */
 .home{
     display: flex;
     height: 100vh;
@@ -187,7 +187,7 @@ section .title::after{
     margin: 5px 0;
     /* padding-left: 45px; */
 }
-.home .home-content .text-3 span{
+.home .home-content .text-3 .typing{
     color: rgb(113, 111, 241);
     font-weight: 600;
 }
@@ -221,111 +221,135 @@ section .title::after{
     }
   }
   
-  /* Skills container with a gradient background */
-.skills {
-    font-family: 'Arial', sans-serif;
-    color: #fff;
-    padding: 25px 30px; /* Added more padding for balance */
-    border-radius: 15px; /* Softer, rounded corners */
-    width: fit-content;
-    margin: 20px 0; /* Adds space around the skills block */
-    transition: transform 0.3s ease-in-out;
-    
-}
-
-/* Hover effect for skills container */
-.skills:hover {
-    transform: translateY(-5px); /* Lifts the container slightly on hover */
-}
-
-/* Paragraph styling within skills */
-.skills p {
-    font-size: 20px; /* Larger font for readability */
-    font-weight: 600; /* Slightly bolder text */
-    margin: 0;
-    margin-bottom: 15px; /* Increased margin for better spacing */
-    text-transform: uppercase; /* Adds emphasis to text */
-    letter-spacing: 1px; /* Adds some spacing between letters */
-}
-
-/* Skills icons container */
-.skills-icons {
-    display: flex;
-    gap: 20px; /* Increased gap for better visual balance */
-}
-
-/* Individual skill icons */
-.skills-icons img {
-    width: 65px; /* Slightly larger icons */
-    height: auto;
-    filter: none;
-    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition */
-}
-
-/* Hover effect for skill icons */
-.skills-icons img:hover {
-    transform: scale(1.2); /* Larger scale effect on hover */
-    filter: brightness(1) invert(0); /* Reverts filter to original on hover */
-}
-
-/* Tablets and Medium Screens */
-@media (max-width: 768px) {
-    .skills {
-        padding: 20px 25px; /* Adjust padding for smaller space */
-        margin: 15px auto; /* Center align and adjust spacing */
-        width: 90%; /* Expand to fit most of the screen width */
-    }
-
-    .skills p {
-        font-size: 18px; /* Slightly smaller font for better fit */
-        margin-bottom: 12px;
-    }
-
-    .skills-icons {
-        gap: 15px; /* Reduce gap between icons */
-        justify-content: center; /* Center align icons */
-    }
-
-    .skills-icons img {
-        width: 55px; /* Reduce icon size for smaller screens */
-    }
-}
-
-/* Mobile Screens */
-@media (max-width: 480px) {
-    .skills {
-        padding: 15px 20px; /* Compact padding */
-        margin: 10px auto; /* Further center and adjust spacing */
-        width: 100%; /* Occupy full width */
-    }
-
-    .skills p {
-        font-size: 16px; /* Smaller font for compact view */
-        margin-bottom: 10px;
-    }
-
-    .skills-icons {
-        flex-direction: column; /* Stack icons vertically */
-        align-items: center; /* Center align vertically */
-        gap: 10px; /* Reduce gap for a compact view */
-    }
-
-    .skills-icons img {
-        width: 50px; /* Further reduce icon size */
-    }
-}
 
 
-.about .about-content .text{
+
+/* about section */
+/* .about .about-content .text{
     font-size: 35px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 .about .about-content .text span{
-    color: crimson;
+    color: black;
 }
 .about .about-content  p{
     text-align: justify;
+} */
+.about .title::after{
+    content: "who i am";
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: rgb(39, 36, 204);
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: rgb(58, 56, 211);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 20px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 2px solid rgb(39, 36, 204);
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    color: white;
+    background: none;
+}
+
+.skills .title::after{
+    content: "what i know";
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    background: rgb(39, 36, 204);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid rgb(39, 36, 204);
+    transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+    color: white;
+    background: none;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgb(113, 111, 241);
+}
+.skills-content .right .html::before{
+    width: 90%;
+}
+.skills-content .right .css::before{
+    width: 70%;
+}
+.skills-content .right .js::before{
+    width: 60%;
+}
+.skills-content .right .python::before{
+    width: 40%;
+}
+.skills-content .right .php::before{
+    width: 80%;
 }
 
 .project-gallery {
@@ -336,12 +360,14 @@ section .title::after{
   margin: 0 auto;
   padding: 2rem;
 }
-
+.projects .title::after{
+    content: "my works";
+  }
 .project {
     background: none; /* Subtle dark background for contrast */
     border-radius: 12px; /* More rounded corners for a softer look */
     overflow: hidden; /* Ensure child elements don’t overflow */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+    box-shadow: 0 6px 12px rgb(241, 234, 234); /* Stronger shadow for depth */
     display: flex;
     align-items: center; /* Vertically center-align content */
     gap: 2rem; /* Space between image and text */
@@ -359,7 +385,7 @@ section .title::after{
     max-width: 300px; /* Limit the maximum width for consistency */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px; /* Smooth, rounded corners for the image */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow around the image */
+    box-shadow: 0 4px 8px rgba(217, 213, 213, 0.864); /* Subtle shadow around the image */
   }
   
   .project-details {
@@ -370,7 +396,8 @@ section .title::after{
   .project-details h2 {
     font-size: 2rem; /* Slightly larger font for the title */
     margin-bottom: 1rem; /* Add spacing below the heading */
-    color: #ffdd57; /* Add a bright accent color for the title */
+    color: rgb(212, 212, 244); /* Add a bright accent color for the title */
+    font-weight: 500;
   }
   
   .project-details p {
@@ -381,13 +408,13 @@ section .title::after{
   
   .project-details a {
     display: inline-block; /* Make buttons behave like blocks */
-    padding: 0.8rem 1.5rem; /* Add padding for larger clickable area */
+    padding: 0.5rem 1rem; /* Add padding for larger clickable area */
     font-size: 1rem; /* Increase button font size */
-    font-weight: bold; /* Make button text bold */
+    font-weight: 300; /* Make button text bold */
     color: #ffffff; /* White text */
     background-color: #2563eb; /* Bright blue button */
     border: none;
-    border-radius: 8px; /* Rounded corners for buttons */
+    border-radius: 10px; /* Rounded corners for buttons */
     text-decoration: none; /* Remove underline from links */
     margin-right: 1rem; /* Space between buttons */
     transition: all 0.3s ease; /* Smooth hover effect */
@@ -422,6 +449,9 @@ section .title::after{
     }
   }
   
+  .contact .title::after{
+    content: "get in touch";    
+  }
 
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -506,9 +536,10 @@ section .title::after{
   border-radius: 6px;
   cursor: pointer;
   flex-wrap: nowrap;
-  background: rgb(32, 121, 200);
-  border: 2px solid white;
+  background: rgb(8, 113, 206);
+  border: 1px solid rgb(4, 61, 110);
   transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
 .right form .button-area button:hover{
   color: white;
@@ -631,9 +662,11 @@ footer span a:hover{
     .home .home-content .text-3{
         font-size: 27px;
     }
-    .about .about-content .right .text,
-    .skills .skills-content .left .text{
+    .about .about-content .right .text{
         font-size: 19px;
+    }
+    .skills {
+        display: none;
     }
     .contact .right form .fields{
         flex-direction: column;

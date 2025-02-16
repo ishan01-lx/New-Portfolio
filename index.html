@@ -8,11 +8,13 @@
     <meta name="description" content="Ishan Sitaula - Portfolio showcasing projects in HTML, CSS, and JavaScript.">
     <meta name="keywords" content="Portfolio, Web Developer, Ishan Sitaula, Ishan, Nss student, Nist student">
     <meta name="author" content="Ishan Sitaula">
-
+    <script src="https://cdn.tailwindcss.com"></script>
   <!-- favicon -->
   <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="output.css">
     
 </head>
 <body>
@@ -34,68 +36,172 @@
             </div>
         </div>
     </nav>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const menu = document.querySelector('.menu');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('show');
+        });
+    </script>
 
     <!-- HOME SECTION -->
     <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text-1">Hi I'm</div>
-                <div class="text-2">Ishan </div>
-                <div class="text-3">I'm a <span class="typing">Web Developer</span></div>
-                <a href="#">Resume</a>
+        <div class="max-width flex flex-col"> 
+            <div class="home-content"
+                <div class="">
+                    <div class="text-3">Hi ! <span class="text-3 text-blue-600">I'm</span></div>
+                    <div class="text-2"><span class="">
+                        Ishan 
+                    </span></div>
+                    <!-- <div class="text-3">I'm a <span class="typing">Web Developer</span></div> -->
+                    <!-- <a href="#">Resume</a> -->
+                </div>
+                <div class="h-10">
+                    <div class="text-3xl text-white-900 font-bold" id="typewriter"></div>
+
+                </div>
+
             </div>
+            
         </div>
     </section>
+    <script>
+        const words = ["I`m Web Developer", "ML Engineer to be", "Good Learner"];
+        let i = 0;
+        let j = 0;
+        let currentWord = "";
+        let isDeleting = false;
+        
+        function type() {
+          currentWord = words[i];
+          if (isDeleting) {
+            document.getElementById("typewriter").textContent = currentWord.substring(0, j-1);
+            j--;
+            if (j == 0) {
+              isDeleting = false;
+              i++;
+              if (i == words.length) {
+                i = 0;
+              }
+            }
+          } else {
+            document.getElementById("typewriter").textContent = currentWord.substring(0, j+1);
+            j++;
+            if (j == currentWord.length) {
+              isDeleting = true;
+            }
+          }
+          setTimeout(type, 130);
+}
 
+type();
+</script>
     <!-- ABOUT SECTION -->
-    <section class="about" id="about">
+    <!-- <section class="about" id="about">
         <div class="max-width">
-            <h2 class="title">About me</h2>
+            <h2 class="title ">About me</h2>
             <div class="about-content">
                     <div class="text">I'm Ishan and I'm a <span class="typing-2">Web Developer</span></div>
                     <p>I am currently pursuing my higher secondary education (+2) at the National School of Sciences, Lainchaur. As a passionate tech enthusiast, I have been deeply immersed in the world of web development, which I find both challenging and exhilarating. My ultimate goal is to leverage technology to create innovative solutions that address real-world problems, positively impacting my community and humanity at large.I thrive on challenges that push me beyond my comfort zone, fostering continuous growth and learning. I am eager to explore opportunities, particularly internships, where I can further develop my skills, contribute meaningfully, and expand my horizons in the field of technology. 
                     </p>
-                    <br><br><br><br><br><br><br><br><br>
-                    <div class="skills">
-                        <p>Skills:</p>
-                        <div class="skills-icons">
-                          
-                            <img src="img/html.png" alt="HTML5">
-                            <img src="img/css.png" alt="CSS3">
-                            <img src="img/js-logo.png" alt="JavaScript">
-                            <img src="img/sql.png" alt="SQL">
-                            <img src="img/react.webp" alt="React">
-                            <img src="img/5968532.png" alt="PHP">
-                            <img src="img/python.png" alt="Python">
+                  
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <hr>
+    </section> -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">ABOUT ME</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="img/profile.jpg" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">I'm Ishan Sitaula I'm a <span class="typing-2">Web Developer</span></div>
+                    <p>I am currently pursuing my higher secondary education (+2) at the National School of Sciences, Lainchaur. As a passionate tech enthusiast, I have been deeply immersed in the world of web development, which I find both challenging and exhilarating. My ultimate goal is to leverage technology to create innovative solutions that address real-world problems, positively impacting my community and humanity at large.I thrive on challenges that push me beyond my comfort zone, fostering continuous growth and learning. I am eager to explore opportunities, particularly internships, where I can further develop my skills, contribute meaningfully, and expand my horizons in the field of technology. 
+                        </p>
+                    <a href="#">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">MY SKILLS</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text text-blue-600">Myskills & experiences.</div>
+                    <p>I am an enthusiastic Web Developer with an immense interest in development and automation.
+Everyday I learn about different mechanisms governing the Web and computer science as a whole so, you can expect speedy technical support and optimized solutions from me.
+                        I'm looking forward to be hired for projects and increase my working experience. </p>
+                    <a href="#">Read more</a>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>90%</span>
                         </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Tailwind CSS</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>PHP</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line php"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Python</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="line python"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Javascript</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line js"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <hr>
     </section>
-
     <!-- PROJECTS SECTION -->
     <section class="projects" id="projects">
         <div class="max-width">
-            <h2 class="title">WEB PROJECTS</h2>
-            <div class="project-gallery">
+            <h2 class="title">PROJECTS</h2>
+            <div class="project-gallery flex flex-wrap">
                                
-                <!-- Project 5 -->
-
-                <div class="project">
+                
+                 <!-- Project 1 -->
+                 <div class="project">
                     <div class="project-image">
-                      <img src="img/loveMeter.png" alt="loveMeter">
+                        <img src="img/library.png" alt="Form">
                     </div>
                     <div class="project-details">
-                      <h2>Love Meter</h2>
-                      <p>I created a lovemeter using HTML, CSS, and JavaScript for the fun prupose and making it user-friendly. I used CSS to design the layout and style the page, while JavaScript added interactivity. This project is made just to use and have a fun time using this."
-                      </p>
-                      <a href="https://ishan01-lx.github.io/Love-meter/" class="btn">Try it!</a>
-                      <a href="https://github.com/ishan01-lx/Love-meter" class="btn">Source Code</a>
+                        <h2>Library Management System</h2>
+                        <p>I developed a Library Management System using PHP, MySQL, and Tailwind CSS, featuring a secure login, an admin dashboard, and student access. Admins can manage students and books, while students can view issued and available books. The system ensures a smooth user experience with error handling and redirections.
+                        </p>
+                        <!-- <a href="https://ishan01-lx.github.io/Form-validation/" class="btn">Try it!</a> -->
+                        <a href="https://github.com/ishan01-lx/library" class="btn">Source Code</a>
                     </div>
-                  </div>
-                  <hr>
+                 </div>
+                
                 <!-- Project 4 -->
                 <div class="project">
                     <div class="project-image">
@@ -140,19 +246,7 @@
                   </div>
                   <hr>
 
-                <!-- Project 1 -->
-                 <div class="project">
-                    <div class="project-image">
-                        <img src="img/form.png" alt="Form">
-                    </div>
-                    <div class="project-details">
-                        <h2>Login Form</h2>
-                        <p>Creating a login form using HTML, CSS, and JavaScript for my first project has been an exciting journey into web development. I designed the form with a clean interface using CSS for styling, while JavaScript added interactive functionality, such as validating user input for a username and password. This project allowed me to grasp key concepts like form handling, DOM manipulation, and event listeners. It was a great starting point to enhance my coding skills and creativity.
-                        </p>
-                        <a href="https://ishan01-lx.github.io/Form-validation/" class="btn">Try it!</a>
-                        <a href="https://github.com/ishan01-lx/Form-validation" class="btn">Source Code</a>
-                    </div>
-                 </div><hr>
+               <hr>
                  
                 <hr>
 
