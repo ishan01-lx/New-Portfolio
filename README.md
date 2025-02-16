@@ -10,7 +10,7 @@ Dark theme for a professional look.
 HTML5 for structure.
 CSS3 for styling and layout.
 🚀 Live Demo
-Check out : https://ishan01-lx.github.io/New-Portfolio/
+Check out : https://www.ishantasitaula.com.np/
 
  
 💡 How to Use
