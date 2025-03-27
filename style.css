@@ -665,9 +665,7 @@ footer span a:hover{
     .about .about-content .right .text{
         font-size: 19px;
     }
-    .skills {
-        display: none;
-    }
+    
     .contact .right form .fields{
         flex-direction: column;
     }
