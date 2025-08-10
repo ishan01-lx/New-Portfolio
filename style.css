@@ -111,7 +111,7 @@ section .title::after{
     color: #fff;
     font-size: 18px;
     font-weight: 500;
-    margin-left: 25px;
+    margin-left: 32px;
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
@@ -322,6 +322,20 @@ section .title::after{
     font-weight: 500;
     font-size: 18px;
 }
+.frontend {
+    background-color: #0c3362;
+}
+
+.language {
+    background: rgb(3, 3, 88);
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.language:hover {
+    background-color: #052f8a; /* Bright blue button */
+    transform: translateY(-4px); /* Lift the button on hover */
+
+}
 .skills .skills-content .right .line{
     height: 5px;
     width: 100%;
@@ -358,21 +372,21 @@ section .title::after{
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 .projects .title::after{
     content: "my works";
   }
 .project {
-    background: none; /* Subtle dark background for contrast */
+    background: rgb(4, 4, 99);
     border-radius: 12px; /* More rounded corners for a softer look */
     overflow: hidden; /* Ensure child elements don’t overflow */
-    box-shadow: 0 6px 12px rgb(241, 234, 234); /* Stronger shadow for depth */
+    /* box-shadow: 0 6px 12px rgb(241, 234, 234);  */
     display: flex;
     align-items: center; /* Vertically center-align content */
     gap: 2rem; /* Space between image and text */
     padding: 2rem; /* Add spacing inside the container */
-    margin: 1rem 0; /* Add spacing between project cards */
+    /* margin: 1rem 0;  */
   }
   
   .project-image {
@@ -396,23 +410,36 @@ section .title::after{
   .project-details h2 {
     font-size: 2rem; /* Slightly larger font for the title */
     margin-bottom: 1rem; /* Add spacing below the heading */
-    color: rgb(212, 212, 244); /* Add a bright accent color for the title */
+    color: rgb(166, 168, 175); /* Add a bright accent color for the title */
     font-weight: 500;
+    
   }
   
   .project-details p {
-    font-size: 1.1rem; /* Increase paragraph font size for better readability */
+    font-size: 0.9rem; /* Increase paragraph font size for better readability */
     line-height: 1.6; /* Improve readability with proper line height */
     margin-bottom: 1.5rem; /* Add spacing below the paragraph */
   }
-  
+  .btn {
+    background-color: #052f8a; /* Bright blue button */
+    transition: all 0.3s ease; /* Smooth hover effect */
+  }
+  .btn:hover {
+        background-color: #1e40af; /* Darker blue on hover */
+  }
+
+  .btn2 {
+    background-color: #4c4a4a;
+  }
+  .btn2:hover {
+    background-color: #555;
+  }
   .project-details a {
     display: inline-block; /* Make buttons behave like blocks */
     padding: 0.5rem 1rem; /* Add padding for larger clickable area */
     font-size: 1rem; /* Increase button font size */
     font-weight: 300; /* Make button text bold */
     color: #ffffff; /* White text */
-    background-color: #2563eb; /* Bright blue button */
     border: none;
     border-radius: 10px; /* Rounded corners for buttons */
     text-decoration: none; /* Remove underline from links */
@@ -421,9 +448,9 @@ section .title::after{
   }
   
   .project-details a:hover {
-    background-color: #1e40af; /* Darker blue on hover */
     transform: translateY(-3px); /* Lift the button on hover */
   }
+  
   
   @media (max-width: 768px) {
     .project {
@@ -433,7 +460,7 @@ section .title::after{
     }
   
     .project-image img {
-      max-width: 80%; /* Scale down the image on smaller screens */
+      max-width: 100%; /* Scale down the image on smaller screens */
     }
   
     .project-details {
@@ -441,11 +468,14 @@ section .title::after{
     }
   
     .project-details h2 {
+        margin-top: 10px;
       font-size: 1.6rem; /* Adjust font size for smaller screens */
+      margin-bottom: 10px;
     }
   
     .project-details p {
       font-size: 1rem; /* Adjust paragraph size */
+      text-align: start;
     }
   }
   
