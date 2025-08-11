@@ -330,6 +330,7 @@ section .title::after{
     background: rgb(3, 3, 88);
     color: white;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 .language:hover {
     background-color: #052f8a; /* Bright blue button */
@@ -423,6 +424,8 @@ section .title::after{
   .btn {
     background-color: #052f8a; /* Bright blue button */
     transition: all 0.3s ease; /* Smooth hover effect */
+        display: inline-block; 
+
   }
   .btn:hover {
         background-color: #1e40af; /* Darker blue on hover */
@@ -430,12 +433,33 @@ section .title::after{
 
   .btn2 {
     background-color: #4c4a4a;
+    transition: all 0.3s ease; /* Smooth hover effect */
+        display: inline-block; 
+
   }
   .btn2:hover {
     background-color: #555;
   }
+  .btn3 {
+    background-color: brown;
+
+    transition: all 0.3s ease; /* Smooth hover effect */
+  }
+  .btn3:hover {
+    background-color: rgb(123, 20, 20);
+  }
+
+  .btn4 {
+        transition: all 0.3s ease; /* Smooth hover effect */
+        cursor: pointer;
+
+  }
+
+  .btn4:hover {
+    transform: translateY(-3px);
+    background-color: #052f8a;
+  }
   .project-details a {
-    display: inline-block; /* Make buttons behave like blocks */
     padding: 0.5rem 1rem; /* Add padding for larger clickable area */
     font-size: 1rem; /* Increase button font size */
     font-weight: 300; /* Make button text bold */
