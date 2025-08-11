@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ishan | Web developer Portfolio</title>
+    <title>Ishan Sitaula | Web developer Portfolio</title>
 
-    <meta name="description" content="Ishan Sitaula - Portfolio showcasing projects in HTML, CSS, and JavaScript.">
+    <meta name="description" content="Ishan`s portfolio showcasing projects in web development, programming, and software.">
     <meta name="keywords" content="Portfolio, Web Developer, Ishan Sitaula,Ishanta Sitaula, Ishan, NSS, Nist, ishanta">
-    <meta name="author" content="Ishanta Sitaula">
+    <meta name="author" content="Ishan Sitaula">
     <script src="https://cdn.tailwindcss.com"></script>
   <!-- favicon -->
-  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="img/profile.jpg" type="image/x-icon">
     <!-- connecting to css -->
     <link rel="stylesheet" href="style.css">
     <!-- fontawesome link -->
@@ -20,7 +20,18 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
 
-
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ishan Sitaula",
+  "url": "https://ishantasitaula.com.np",
+  "sameAs": [
+    "https://www.linkedin.com/in/ishan-sitaula-5468b3318/",
+    "https://github.com/ishan01-lx"
+  ]
+}
+</script>
     
 </head>
 <body>
@@ -53,22 +64,30 @@
 
     <!-- HOME SECTION -->
     <section class="home" id="home">
-        <div class="max-width flex flex-col"> 
-            <div class="home-content"
+        <div class="max-width flex justify-between"> 
+            <div class="home-content">
                 <div class="">
                     <div class="text-3">Hi ! <span class="text-3 text-blue-600">I'm</span></div>
-                    <div class="text-2"><span class="">
+                    <h1 class="text-2"><span class="">
                         Ishan 
-                    </span></div>
+                    </span></h1>
                     <!-- <div class="text-3">I'm a <span class="typing">Web Developer</span></div> -->
                     <!-- <a href="#">Resume</a> -->
                 </div>
                 <div class="h-10">
                     <div class="text-3xl text-white-900 font-bold" id="typewriter"></div>
+                </div>
+            </div>
+
+            <div class="h-auto w-[30vw] hidden md:flex justify-end">
+                <div class="w-[25vw] homeImg">
+                <img src="img/homepage.png" alt="">
 
                 </div>
 
             </div>
+                
+            
             
         </div>
     </section>
