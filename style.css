@@ -455,7 +455,6 @@ section .title::after {
   padding: 5px;
   border-radius: 0px;
   animation: 3s spin linear infinite;
-  
 }
 
 .project::before {
@@ -658,7 +657,7 @@ section .title::after {
 .contact .right form .textarea textarea {
   height: 100%;
   width: 100%;
-  border: 1px solid lightgrey;
+  border: 1px solid #a498fc;
   border-radius: 6px;
   outline: none;
   padding: 0 15px;
@@ -684,12 +683,12 @@ section .title::after {
   width: 160px !important;
   height: 45px;
   outline: none;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
   border-radius: 6px;
   cursor: pointer;
   flex-wrap: nowrap;
-  background: rgb(8, 113, 206);
+  background: rgb(3, 3, 88);
   border: 1px solid rgb(4, 61, 110);
   transition: all 0.3s ease;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
@@ -859,6 +858,9 @@ footer span a:hover {
 .social-icons a:hover img {
   transform: scale(1.1); /* Slightly enlarge on hover */
   filter: brightness(1.5); /* Brighten the icon on hover */
+
+  box-shadow: 0 4px 6px -1px rgba(124, 58, 237, 0.3),
+    0 2px 4px -1px rgba(124, 58, 237, 0.15);
 }
 
 /* Mobile Responsiveness */
