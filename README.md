@@ -27,4 +27,4 @@ Feel free to reach out if you have any questions or feedback:
 
 Email: ishan12chhetri@gmail.com
 LinkedIn: https://www.linkedin.com/in/ishan-sitaula-5468b3318/
-Instagram: https://www.instagram.com/12_ishannn/
+Instagram: https://www.instagram.com/itz.lx.ishannn/
