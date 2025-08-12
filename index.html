@@ -1,127 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ishan Sitaula | Web developer Portfolio</title>
 
-    <meta name="description" content="Ishan`s portfolio showcasing projects in web development, programming, and software.">
-    <meta name="keywords" content="Portfolio, Web Developer, Ishan Sitaula,Ishanta Sitaula, Ishan, NSS, Nist, ishanta">
-    <meta name="author" content="Ishan Sitaula">
+    <meta
+      name="description"
+      content="Ishan`s portfolio showcasing projects in web development, programming, and software."
+    />
+    <meta
+      name="keywords"
+      content="Portfolio, Web Developer, Ishan Sitaula,Ishanta Sitaula, Ishan, NSS, Nist, ishanta"
+    />
+    <meta name="author" content="Ishan Sitaula" />
     <script src="https://cdn.tailwindcss.com"></script>
-  <!-- favicon -->
-  <link rel="shortcut icon" href="img/profile.jpg" type="image/x-icon">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/profile.jpg" type="image/x-icon" />
     <!-- connecting to css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- fontawesome link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="output.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="output.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Ishan Sitaula",
-  "url": "https://ishantasitaula.com.np",
-  "sameAs": [
-    "https://www.linkedin.com/in/ishan-sitaula-5468b3318/",
-    "https://github.com/ishan01-lx"
-  ]
-}
-</script>
-    
-</head>
-<body>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ishan Sitaula",
+        "url": "https://ishantasitaula.com.np",
+        "sameAs": [
+          "https://www.linkedin.com/in/ishan-sitaula-5468b3318/",
+          "https://github.com/ishan01-lx"
+        ]
+      }
+    </script>
+  </head>
+  <body>
     <div class="scroll-up-btn">
-        <i class="fas fa-angle-up"></i>
+      <i class="fas fa-angle-up"></i>
     </div>
     <nav class="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="#">Portfo<span>lio</span></a></div>
-            <!-- NAVIGATION BAR -->
-            <ul class="menu">
-                <li><a href="#home" class="menu-btn"><i class="fa-solid fa-house-chimney mr-2"></i>Home</a></li>
-                <li><a href="#about" class="menu-btn"><i class="fa-solid fa-user mr-2"></i>About</a></li>
-                <li><a href="#projects" class="menu-btn"><i class="fa-solid fa-diagram-project mr-2"></i>Projects</a></li>
-                <li><a href="#contact" class="menu-btn"><i class="fa-solid fa-envelope mr-2"></i>Contact</a></li>
-            </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
+      <div class="max-width">
+        <div class="logo">
+          <a href="#">Portfo<span>lio</span></a>
         </div>
+        <!-- NAVIGATION BAR -->
+        <ul class="menu">
+          <li>
+            <a href="#home" class="menu-btn"
+              ><i class="fa-solid fa-house-chimney mr-2"></i>Home</a
+            >
+          </li>
+          <li>
+            <a href="#about" class="menu-btn"
+              ><i class="fa-solid fa-user mr-2"></i>About</a
+            >
+          </li>
+          <li>
+            <a href="#projects" class="menu-btn"
+              ><i class="fa-solid fa-diagram-project mr-2"></i>Projects</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="menu-btn"
+              ><i class="fa-solid fa-envelope mr-2"></i>Contact</a
+            >
+          </li>
+        </ul>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
     </nav>
     <script>
-        const menuBtn = document.querySelector('.menu-btn');
-        const menu = document.querySelector('.menu');
+      const menuBtn = document.querySelector(".menu-btn");
+      const menu = document.querySelector(".menu");
 
-        menuBtn.addEventListener('click', () => {
-            menu.classList.toggle('show');
-        });
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("show");
+      });
     </script>
 
     <!-- HOME SECTION -->
     <section class="home" id="home">
-        <div class="max-width flex justify-between"> 
-            <div class="home-content">
-                <div class="">
-                    <div class="text-3">Hi ! <span class="text-3 text-blue-600">I'm</span></div>
-                    <h1 class="text-2"><span class="">
-                        Ishan 
-                    </span></h1>
-                    <!-- <div class="text-3">I'm a <span class="typing">Web Developer</span></div> -->
-                    <!-- <a href="#">Resume</a> -->
-                </div>
-                <div class="h-10">
-                    <div class="text-3xl text-white-900 font-bold" id="typewriter"></div>
-                </div>
+      <div class="max-width flex justify-between">
+        <div class="home-content">
+          <div class="">
+            <div class="text-3">
+              Hi ! <span class="text-3 text-blue-600">I'm</span>
             </div>
-
-            <div class="h-auto w-[30vw] hidden md:flex justify-end">
-                <div class="w-[25vw] homeImg">
-                <img src="img/homepage.png" alt="">
-
-                </div>
-
-            </div>
-                
-            
-            
+            <h1 class="text-2"><span class=""> Ishan </span></h1>
+            <!-- <div class="text-3">I'm a <span class="typing">Web Developer</span></div> -->
+            <!-- <a href="#">Resume</a> -->
+          </div>
+          <div class="h-10">
+            <div
+              class="text-3xl text-white-900 font-bold"
+              id="typewriter"
+            ></div>
+          </div>
         </div>
+
+        <div class="h-auto w-[30vw] hidden md:flex justify-end">
+          <div class="w-[25vw] homeImg">
+            <img src="img/homepage.png" alt="" />
+          </div>
+        </div>
+      </div>
     </section>
     <script>
-        const words = ["MERN Developer", "ML Engineer to be", "Good Learner"];
-        let i = 0;
-        let j = 0;
-        let currentWord = "";
-        let isDeleting = false;
-        
-        function type() {
-          currentWord = words[i];
-          if (isDeleting) {
-            document.getElementById("typewriter").textContent = currentWord.substring(0, j-1);
-            j--;
-            if (j == 0) {
-              isDeleting = false;
-              i++;
-              if (i == words.length) {
-                i = 0;
-              }
-            }
-          } else {
-            document.getElementById("typewriter").textContent = currentWord.substring(0, j+1);
-            j++;
-            if (j == currentWord.length) {
-              isDeleting = true;
+      const words = ["MERN Developer", "ML Engineer to be", "Good Learner"];
+      let i = 0;
+      let j = 0;
+      let currentWord = "";
+      let isDeleting = false;
+
+      function type() {
+        currentWord = words[i];
+        if (isDeleting) {
+          document.getElementById("typewriter").textContent =
+            currentWord.substring(0, j - 1);
+          j--;
+          if (j == 0) {
+            isDeleting = false;
+            i++;
+            if (i == words.length) {
+              i = 0;
             }
           }
-          setTimeout(type, 130);
-}
+        } else {
+          document.getElementById("typewriter").textContent =
+            currentWord.substring(0, j + 1);
+          j++;
+          if (j == currentWord.length) {
+            isDeleting = true;
+          }
+        }
+        setTimeout(type, 130);
+      }
 
-type();
-</script>
+      type();
+    </script>
     <!-- ABOUT SECTION -->
     <!-- <section class="about" id="about">
         <div class="max-width">
@@ -138,284 +167,536 @@ type();
         <hr>
     </section> -->
     <section class="about" id="about">
-        <div class="max-width">
-            <h2 class="title">ABOUT ME</h2>
-            <div class="about-content">
-                <div class="column left">
-                    <img src="img/profile.jpg" alt="">
-                </div>
-                <div class="column right">
-                    <div class="text">I'm Ishan Sitaula I'm a <span class="typing-2">Web Developer</span></div>
-                    <p>I have pursued my higher secondary education (+2) at the National School of Sciences, Lainchaur. As a passionate tech enthusiast, I have been deeply immersed in the world of web development, which I find both challenging and exhilarating. My ultimate goal is to leverage technology to create innovative solutions that address real-world problems, positively impacting my community and humanity at large.I thrive on challenges that push me beyond my comfort zone, fostering continuous growth and learning. I am eager to explore opportunities, particularly internships, where I can further develop my skills, contribute meaningfully, and expand my horizons in the field of technology. 
-                        </p>
-                    <a href="myCV.pdf">View CV</a>
-                </div>
+      <div class="max-width">
+        <h2 class="title">ABOUT ME</h2>
+        <div class="about-content">
+          <div class="column left">
+            <img src="img/profile.jpg" alt="" />
+          </div>
+          <div class="column right">
+            <div class="text">
+              I'm Ishan Sitaula I'm a
+              <span class="typing-2">Web Developer</span>
             </div>
+            <p>
+              I have pursued my higher secondary education (+2) at the National
+              School of Sciences, Lainchaur. As a passionate tech enthusiast, I
+              have been deeply immersed in the world of web development, which I
+              find both challenging and exhilarating. My ultimate goal is to
+              leverage technology to create innovative solutions that address
+              real-world problems, positively impacting my community and
+              humanity at large.I thrive on challenges that push me beyond my
+              comfort zone, fostering continuous growth and learning. I am eager
+              to explore opportunities, particularly internships, where I can
+              further develop my skills, contribute meaningfully, and expand my
+              horizons in the field of technology.
+            </p>
+            <a href="myCV.pdf">View CV</a>
+          </div>
         </div>
+      </div>
     </section>
 
-
-        <section class="skills" id="skills">
-        <div class="max-width">
-            <h2 class="title">MY SKILLS</h2>
-            <div class="skills-content">
-                <div class="column left">
-                    <div class="text text-blue-600">Myskills & experiences.</div>
-                    <p class="">I am an enthusiastic Web Developer with an immense interest in development and automation.
-Everyday I learn about different mechanisms governing the Web and computer science as a whole so, you can expect speedy technical support and optimized solutions from me.
-                        I'm looking forward to be hired for projects and increase my working experience. </p>
-                    <a href="#skills">Read more</a>
+    <section class="skills" id="skills">
+      <div class="max-width">
+        <h2 class="title">MY SKILLS</h2>
+        <div class="skills-content">
+          <div class="column left">
+            <div class="text text-blue-600">Myskills & experiences.</div>
+            <p class="">
+              I am an enthusiastic Web Developer with an immense interest in
+              development and automation. Everyday I learn about different
+              mechanisms governing the Web and computer science as a whole so,
+              you can expect speedy technical support and optimized solutions
+              from me. I'm looking forward to be hired for projects and increase
+              my working experience.
+            </p>
+            <a href="#skills">Read more</a>
+          </div>
+          <div class="column right">
+            <!-- frontend -->
+            <div class="h-auto w-auto p-5 frontend rounded-lg shadow-md mb-6">
+              <h1 class="font-semibold text-2xl text-blue-500 mb-6">
+                Frontend
+              </h1>
+              <div class="flex justify-start gap-6 flex-wrap">
+                <div
+                  class="w-20 h-auto p-1 text-center rounded-md shadow-md language"
+                >
+                  HTML
                 </div>
-                <div class="column right">
-                    <!-- frontend -->
-                    <div class="h-auto w-auto p-5 frontend rounded-lg shadow-md mb-6">
-                        <h1 class="font-semibold text-2xl text-blue-500 mb-6">Frontend</h1>
-                        <div class="flex justify-start gap-6 flex-wrap">
-                            <div class="w-20 h-auto p-1 text-center rounded-md shadow-md language">HTML</div>
-                            <div class="w-25 h-auto p-1 text-center rounded-md shadow-md language">Tailwind</div>
-                            <div class="w-24 h-auto p-1 text-center rounded-md shadow-md language">JavaScript</div>
-                            <div class="w-20 h-auto p-1 text-center rounded-md shadow-md language">React</div>  
-                        </div>
-
-                    </div>
-
-                    <!-- backend -->
-                    <div class="h-auto w-auto p-5 frontend rounded-lg shadow-md mb-6">
-                        <h1 class="font-semibold text-2xl text-blue-500 mb-6">Backend</h1>
-                        <div class="flex justify-start gap-6 flex-wrap">
-                            <div class="w-20 h-auto p-1 text-center rounded-md shadow-md language">PHP</div>
-                            <div class="w-20 h-auto p-1 text-center rounded-md shadow-md language">Node Js</div>
-                            <div class="w-20 h-auto p-1 text-center rounded-md shadow-md language">SQL</div>
-                            <div class="w-22 h-auto p-1 text-center rounded-md shadow-md language">Mongo DB</div>  
-                            <div class="w-18 h-auto p-1 text-center rounded-md shadow-md language">Python</div>  
-                        </div>
-
-                    </div>
-                    <div class="h-auto w-auto p-5 frontend rounded-lg shadow-md">
-                        <h1 class="font-semibold text-2xl text-blue-500 mb-6">Tools</h1>
-                        <div class="flex justify-start gap-6 flex-wrap">
-                            <div class="w-20 h-auto p-1 text-center rounded-md shadow-md language">Figma</div>
-                            <div class="w-20 h-auto p-1 text-center rounded-md shadow-md language">Git</div>
-                            
-                        </div>
-
-                    </div>
-                   
+                <div
+                  class="w-25 h-auto p-1 text-center rounded-md shadow-md language"
+                >
+                  Tailwind
                 </div>
+                <div
+                  class="w-24 h-auto p-1 text-center rounded-md shadow-md language"
+                >
+                  JavaScript
+                </div>
+                <div
+                  class="w-20 h-auto p-1 text-center rounded-md shadow-md language"
+                >
+                  React
+                </div>
+              </div>
             </div>
+
+            <!-- backend -->
+            <div class="h-auto w-auto p-5 frontend rounded-lg shadow-md mb-6">
+              <h1 class="font-semibold text-2xl text-blue-500 mb-6">Backend</h1>
+              <div class="flex justify-start gap-6 flex-wrap">
+                <div
+                  class="w-20 h-auto p-1 text-center rounded-md shadow-md language"
+                >
+                  PHP
+                </div>
+                <div
+                  class="w-20 h-auto p-1 text-center rounded-md shadow-md language"
+                >
+                  Node Js
+                </div>
+                <div
+                  class="w-20 h-auto p-1 text-center rounded-md shadow-md language"
+                >
+                  SQL
+                </div>
+                <div
+                  class="w-22 h-auto p-1 text-center rounded-md shadow-md language"
+                >
+                  Mongo DB
+                </div>
+                <div
+                  class="w-18 h-auto p-1 text-center rounded-md shadow-md language"
+                >
+                  Python
+                </div>
+              </div>
+            </div>
+            <div class="h-auto w-auto p-5 frontend rounded-lg shadow-md">
+              <h1 class="font-semibold text-2xl text-blue-500 mb-6">Tools</h1>
+              <div class="flex justify-start gap-6 flex-wrap">
+                <div
+                  class="w-20 h-auto p-1 text-center rounded-md shadow-md language"
+                >
+                  Figma
+                </div>
+                <div
+                  class="w-20 h-auto p-1 text-center rounded-md shadow-md language"
+                >
+                  Git
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- PROJECTS SECTION -->
     <section class="projects" id="projects">
-        <div class="max-width">
-            <h2 class="title">PROJECTS</h2>
-            <div class="project-gallery flex flex-wrap">
+      <div class="max-width">
+        <h2 class="title">PROJECTS</h2>
+        <div class="project-gallery flex flex-wrap">
+          <!-- Project 1 -->
+          <div class="project">
+            <div class="project-image">
+              <img src="img/ecobin.png" alt="Form" />
+            </div>
+            <div class="project-details">
+              <h2>EcoBin</h2>
+              <p class="">
+                EcoBin is a smart waste management website with features like
+                real-time truck notifications, live tracking, AI-based waste
+                classification, personal dashboards, and upcoming digital
+                payments via eSewa and Khalti, aimed at making waste disposal
+                efficient and convenient.
+              </p>
+              <div class="flex justify-start gap-6 flex-wrap mb-6">
+                <div
+                  class="w-15 h-auto p-1 text-center rounded-md shadow-md languageProject btn4"
+                >
+                  <i class="fa-brands fa-react"></i>
+                </div>
+                <div
+                  class="w-15 h-auto p-1 text-center rounded-md shadow-md languageProject btn4"
+                >
+                  <i class="fa-brands fa-node-js"></i>
+                </div>
+                <div
+                  class="w-15 h-auto p-1 pl-6 text-center rounded-md shadow-md languageProject btn4"
+                >
+                  <span
+                    class="iconify"
+                    data-icon="simple-icons:mongodb"
+                    style="color: white"
+                    data-width="16"
+                  ></span>
+                </div>
+                <div
+                  class="w-15 h-auto p-1 pl-6 pt-2 text-center rounded-md shadow-md languageProject btn4"
+                >
+                  <span
+                    class="iconify"
+                    data-icon="simple-icons:typescript"
+                    style="color: white"
+                    data-width="15"
+                  ></span>
+                </div>
+                <div
+                  class="w-15 h-auto p-1 text-center rounded-md shadow-md languageProject btn4"
+                >
+                  <i class="fa-brands fa-figma"></i>
+                </div>
+              </div>
+              <!-- <a href="https://ishan01-lx.github.io/Form-validation/" class="btn">Try it!</a> -->
+              <a href="https://github.com/prabeshsitaula07/EcoBin" class="btn2"
+                ><i class="fa-solid fa-code-compare mr-3"></i>Source Code</a
+              >
+              <a
+                href="https://github.com/prabeshsitaula07/EcoBin"
+                class="btn3 inline-flex items-center gap-1.5"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  width="16"
+                  height="16"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"
+                  />
+                </svg>
+                In Progress
+              </a>
+            </div>
+          </div>
 
-                <!-- Project 1 -->
-                 <div class="project">
-                    <div class="project-image">
-                        <img src="img/ecobin.png" alt="Form">
-                    </div>
-                    <div class="project-details">
-                        <h2>EcoBin</h2>
-                        <p class="">
-                                EcoBin is a smart waste management website with features like real-time truck notifications, live tracking, AI-based waste classification, personal dashboards, and upcoming digital payments via eSewa and Khalti, aimed at making waste disposal efficient and convenient.
-                        </p>
-                        <div class="flex justify-start gap-6 flex-wrap mb-6">
-                            <div class="w-15 h-auto p-1 text-center rounded-md shadow-md languageProject btn4"><i class="fa-brands fa-react"></i></div>
-                            <div class="w-15 h-auto p-1 text-center rounded-md shadow-md languageProject btn4"><i class="fa-brands fa-node-js"></i></div>
-                            <div class="w-15 h-auto p-1 pl-6 text-center rounded-md shadow-md languageProject btn4"><span class="iconify" data-icon="simple-icons:mongodb" style="color: white;" data-width="16"></span></div>
-                            <div class="w-15 h-auto p-1 pl-6 pt-2 text-center rounded-md shadow-md languageProject btn4"><span class="iconify" data-icon="simple-icons:typescript" style="color: white;" data-width="15"></span>
-</div>
-                            <div class="w-15 h-auto p-1 text-center rounded-md shadow-md languageProject btn4"><i class="fa-brands fa-figma"></i></div>
-                        </div>
-                        <!-- <a href="https://ishan01-lx.github.io/Form-validation/" class="btn">Try it!</a> -->
-                        <a href="https://github.com/prabeshsitaula07/EcoBin" class="btn2"><i class="fa-solid fa-code-compare mr-3"></i>Source Code</a>
-                        <a href="https://github.com/prabeshsitaula07/EcoBin" class="btn3 inline-flex items-center gap-1.5">
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="16" height="16">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" />
-  </svg>
-  In Progress
-</a>
+          <hr />
+          <!-- Project 2 -->
+          <div class="project">
+            <div class="project-image">
+              <img src="img/library.png" alt="Form" />
+            </div>
+            <div class="project-details">
+              <h2>Library Management System</h2>
+              <p class="">
+                I developed a Library Management System using PHP, MySQL, and
+                Tailwind CSS, featuring a secure login, an admin dashboard, and
+                student access. Admins can manage students and books, while
+                students can view issued and available books. The system ensures
+                a smooth user experience with error handling and redirections.
+              </p>
+              <div class="flex justify-start gap-6 flex-wrap mb-6">
+                <div
+                  class="w-15 h-auto p-1 text-center rounded-md shadow-md languageProject btn4"
+                >
+                  <i class="fa-brands fa-php"></i>
+                </div>
+                <div
+                  class="w-15 h-auto p-1 text-center rounded-md shadow-md languageProject btn4"
+                >
+                  <i class="fa-brands fa-html5"></i>
+                </div>
+                <div
+                  class="w-15 h-auto p-1 pl-6 text-center rounded-md shadow-md languageProject btn4"
+                >
+                  <span
+                    class="iconify"
+                    data-icon="simple-icons:tailwindcss"
+                    style="color: white"
+                    data-width="20"
+                  ></span>
+                </div>
+                <div
+                  class="w-15 h-auto p-1 pl-6 text-center rounded-md shadow-md languageProject btn4"
+                >
+                  <span
+                    class="iconify"
+                    data-icon="simple-icons:mysql"
+                    style="color: white"
+                    data-width="20"
+                  ></span>
+                </div>
 
-                    </div>
-                 </div>
-                               
-                <hr>
-                 <!-- Project 2 -->
-                 <div class="project">
-                    <div class="project-image">
-                        <img src="img/library.png" alt="Form">
-                    </div>
-                    <div class="project-details">
-                        <h2>Library Management System</h2>
-                        <p class="">I developed a Library Management System using PHP, MySQL, and Tailwind CSS, featuring a secure login, an admin dashboard, and student access. Admins can manage students and books, while students can view issued and available books. The system ensures a smooth user experience with error handling and redirections.
-                        </p>
-                        <div class="flex justify-start gap-6 flex-wrap mb-6">
-                            <div class="w-15 h-auto p-1 text-center rounded-md shadow-md languageProject btn4"><i class="fa-brands fa-php"></i></div>
-                            <div class="w-15 h-auto p-1 text-center rounded-md shadow-md languageProject btn4"><i class="fa-brands fa-html5"></i></div>
-                            <div class="w-15 h-auto p-1 pl-6 text-center rounded-md shadow-md languageProject btn4"><span class="iconify" data-icon="simple-icons:tailwindcss" style="color: white" data-width="20"></span></div>
-                            <div class="w-15 h-auto p-1 pl-6 text-center rounded-md shadow-md languageProject btn4"><span class="iconify" data-icon="simple-icons:mysql" style="color: white" data-width="20"></span>
-</div>
+                <div
+                  class="w-15 h-auto p-1 text-center rounded-md shadow-md languageProject btn4"
+                >
+                  <i class="fa-brands fa-js"></i>
+                </div>
+              </div>
+              <!-- <a href="https://ishan01-lx.github.io/Form-validation/" class="btn">Try it!</a> -->
+              <a href="https://github.com/ishan01-lx/library" class="btn2"
+                ><i class="fa-solid fa-code-compare mr-3"></i>Source Code</a
+              >
+            </div>
+          </div>
+          <hr />
 
-                            <div class="w-15 h-auto p-1 text-center rounded-md shadow-md languageProject btn4"><i class="fa-brands fa-js"></i></div>
-                        </div>
-                        <!-- <a href="https://ishan01-lx.github.io/Form-validation/" class="btn">Try it!</a> -->
-                        <a href="https://github.com/ishan01-lx/library" class="btn2"><i class="fa-solid fa-code-compare mr-3"></i>Source Code</a>
-                    </div>
-                 </div>
-                <hr>
+          <div class="project">
+            <div class="project-image">
+              <img src="img/facebook.png" alt="Amazon-clone" />
+            </div>
+            <div class="project-details">
+              <h2>Facebook-clone</h2>
+              <p class="">
+                This Facebook clone project is a responsive social media site
+                built with HTML and Tailwind CSS. It features a clean layout
+                with a navigation bar, user profiles, and a news feed. Using
+                Tailwind’s utility classes, the design is modern and works well
+                on all devices, showcasing frontend development and UI skills.
+              </p>
+              <div class="flex justify-start gap-6 flex-wrap mb-6">
+                <div
+                  class="w-15 h-auto p-1 text-center rounded-md shadow-md languageProject btn4"
+                >
+                  <i class="fa-brands fa-html5"></i>
+                </div>
+                <div
+                  class="w-15 h-auto p-1 pl-6 text-center rounded-md shadow-md languageProject btn4"
+                >
+                  <span
+                    class="iconify"
+                    data-icon="simple-icons:tailwindcss"
+                    style="color: white"
+                    data-width="20"
+                  ></span>
+                </div>
+              </div>
+              <a href="https://ishan01-lx.github.io/facebookClone/" class="btn"
+                >Live Preview<i class="fa-solid fa-arrow-right-long ml-3"></i
+              ></a>
+              <a href="https://github.com/ishan01-lx/facebookClone" class="btn2"
+                ><i class="fa-solid fa-code-compare mr-3"></i>Source Code</a
+              >
+            </div>
+          </div>
+          <hr />
+          <!-- Project 3 -->
+          <div class="project">
+            <div class="project-image">
+              <img src="img/amazon.png" alt="Amazon-clone" />
+            </div>
+            <div class="project-details">
+              <h2>Amazon-clone</h2>
+              <p class="">
+                Created an Amazon clone using HTML, CSS, and JavaScript,
+                focusing on building a responsive, user-friendly interface. I
+                used CSS to design the layout and style the page, while
+                JavaScript added interactivity, such as form validation and
+                dynamic content. This project gave me a solid foundation in
+                front-end development and enhanced my understanding of web
+                design and basic scripting."
+              </p>
+              <div class="flex justify-start gap-6 flex-wrap mb-6">
+                <div
+                  class="w-15 h-auto p-1 text-center rounded-md shadow-md languageProject btn4"
+                >
+                  <i class="fa-brands fa-html5"></i>
+                </div>
+                <div
+                  class="w-15 h-auto p-1 pl-6 text-center rounded-md shadow-md languageProject btn4"
+                >
+                  <span
+                    class="iconify"
+                    data-icon="simple-icons:tailwindcss"
+                    style="color: white"
+                    data-width="20"
+                  ></span>
+                </div>
+              </div>
+              <a href="https://ishan01-lx.github.io/Amazon-clone/" class="btn"
+                >Live Preview<i class="fa-solid fa-arrow-right-long ml-3"></i
+              ></a>
+              <a href="https://github.com/ishan01-lx/Amazon-clone" class="btn2"
+                ><i class="fa-solid fa-code-compare mr-3"></i>Source Code</a
+              >
+            </div>
+          </div>
+          <hr />
+          <!-- Project 3 -->
+          <div class="project">
+            <div class="project-image">
+              <img src="img/clock.png" alt="Clock" />
+            </div>
+            <div class="project-details">
+              <h2>DIGITAL-CLOCK</h2>
+              <p class="">
+                I made a digital clock using HTML, CSS, and JavaScript. HTML
+                creates the structure to display the time, CSS styles the clock
+                to look good, and JavaScript updates the time every second. It
+                was a simple and fun project to understand how these
+                technologies work together!
+              </p>
+              <div class="flex justify-start gap-6 flex-wrap mb-6">
+                <div
+                  class="w-15 h-auto p-1 text-center rounded-md shadow-md languageProject btn4"
+                >
+                  <i class="fa-brands fa-html5"></i>
+                </div>
+                <div
+                  class="w-15 h-auto p-1 text-center rounded-md shadow-md languageProject btn4"
+                >
+                  <i class="fa-brands fa-css"></i>
+                </div>
+                <div
+                  class="w-15 h-auto p-1 text-center rounded-md shadow-md languageProject btn4"
+                >
+                  <i class="fa-brands fa-js"></i>
+                </div>
+              </div>
+              <a href="https://ishan01-lx.github.io/DIGITAL_CLOCK/" class="btn"
+                >Live Preview<i class="fa-solid fa-arrow-right-long ml-3"></i
+              ></a>
+              <a href="https://github.com/ishan01-lx/DIGITAL_CLOCK" class="btn2"
+                ><i class="fa-solid fa-code-compare mr-3"></i>Source Code</a
+              >
+            </div>
+          </div>
+          <hr />
 
-                <div class="project ">
-                    <div class="project-image">
-                      <img src="img/facebook.png" alt="Amazon-clone">
-                    </div>
-                    <div class="project-details">
-                      <h2>Facebook-clone</h2>
-                      <p class="">This Facebook clone project is a responsive social media site built with HTML and Tailwind CSS. It features a clean layout with a navigation bar, user profiles, and a news feed. Using Tailwind’s utility classes, the design is modern and works well on all devices, showcasing frontend development and UI skills.
-                      </p>
-                      <div class="flex justify-start gap-6 flex-wrap mb-6">
-                            <div class="w-15 h-auto p-1 text-center rounded-md shadow-md languageProject btn4"><i class="fa-brands fa-html5"></i></div>
-                            <div class="w-15 h-auto p-1 pl-6 text-center rounded-md shadow-md languageProject btn4"><span class="iconify" data-icon="simple-icons:tailwindcss" style="color: white" data-width="20"></span></div>
-                        </div>
-                      <a href="https://ishan01-lx.github.io/facebookClone/" class="btn">Live Preview<i class="fa-solid fa-arrow-right-long ml-3"></i></a>
-                      <a href="https://github.com/ishan01-lx/facebookClone" class="btn2"><i class="fa-solid fa-code-compare mr-3"></i>Source Code</a>
-                      
-                    </div>
-                  </div>
-                  <hr>
-                <!-- Project 3 -->
-                <div class="project ">
-                    <div class="project-image">
-                      <img src="img/amazon.png" alt="Amazon-clone">
-                    </div>
-                    <div class="project-details">
-                      <h2>Amazon-clone</h2>
-                      <p class="">Created an Amazon clone using HTML, CSS, and JavaScript, focusing on building a responsive, user-friendly interface. I used CSS to design the layout and style the page, while JavaScript added interactivity, such as form validation and dynamic content. This project gave me a solid foundation in front-end development and enhanced my understanding of web design and basic scripting."
-                      </p>
-                        <div class="flex justify-start gap-6 flex-wrap mb-6">
-                            <div class="w-15 h-auto p-1 text-center rounded-md shadow-md languageProject btn4"><i class="fa-brands fa-html5"></i></div>
-                            <div class="w-15 h-auto p-1 pl-6 text-center rounded-md shadow-md languageProject btn4"><span class="iconify" data-icon="simple-icons:tailwindcss" style="color: white" data-width="20"></span></div>
-                        </div>
-                      <a href="https://ishan01-lx.github.io/Amazon-clone/" class="btn">Live Preview<i class="fa-solid fa-arrow-right-long ml-3"></i></a>
-                      <a href="https://github.com/ishan01-lx/Amazon-clone" class="btn2"><i class="fa-solid fa-code-compare mr-3"></i>Source Code</a>
-                    </div>
-                  </div>
-                  <hr>
-                 <!-- Project 3 -->
-                 <div class="project">
-                    <div class="project-image">
-                        <img src="img/clock.png" alt="Clock">
-                    </div>
-                    <div class="project-details">
-                        <h2>DIGITAL-CLOCK</h2>
-                        <p class="">I made a digital clock using HTML, CSS, and JavaScript. HTML creates the structure to display the time, CSS styles the clock to look good, and JavaScript updates the time every second. It was a simple and fun project to understand how these technologies work together!
-                        </p>
-                        <div class="flex justify-start gap-6 flex-wrap mb-6">
-                            <div class="w-15 h-auto p-1 text-center rounded-md shadow-md languageProject btn4"><i class="fa-brands fa-html5"></i></div>
-                            <div class="w-15 h-auto p-1 text-center rounded-md shadow-md languageProject btn4"><i class="fa-brands fa-css"></i></div>
-                            <div class="w-15 h-auto p-1 text-center rounded-md shadow-md languageProject btn4"><i class="fa-brands fa-js"></i></div>
-
-                        </div>
-                        <a href="https://ishan01-lx.github.io/DIGITAL_CLOCK/" class="btn">Live Preview<i class="fa-solid fa-arrow-right-long ml-3"></i></a> 
-                        <a href="https://github.com/ishan01-lx/DIGITAL_CLOCK" class="btn2"><i class="fa-solid fa-code-compare mr-3"></i>Source Code</a>
-                    </div>
-                 </div>
-                 <hr>
-
-                 <!-- Project 2 -->
-                <div class="project">
-                    <div class="project-image">
-                      <img src="img/calculator.png" alt="Calculator Project">
-                    </div>
-                    <div class="project-details">
-                      <h2>Calculator</h2>
-                      <p class="">I built a responsive, user-friendly calculator using HTML, CSS, and JavaScript, supporting essential arithmetic operations like addition, subtraction, multiplication, and division. This project demonstrates my expertise in DOM manipulation, event handling, and CSS design, showcasing my ability to develop interactive web applications and solve problems effectively.
-                      </p>
-                        <div class="flex justify-start gap-6 flex-wrap mb-6">
-                            <div class="w-15 h-auto p-1 text-center rounded-md shadow-md languageProject btn4"><i class="fa-brands fa-html5"></i></div>
-                            <div class="w-15 h-auto p-1 text-center rounded-md shadow-md languageProject btn4"><i class="fa-brands fa-css"></i></div>
-                            <div class="w-15 h-auto p-1 text-center rounded-md shadow-md languageProject btn4"><i class="fa-brands fa-js"></i></div>
-
-                        </div>
-                      <a href="https://ishan01-lx.github.io/calculator-work/" class="btn">Live Preview<i class="fa-solid fa-arrow-right-long ml-3"></i></a>
-                      <a href="https://github.com/ishan01-lx/calculator-work" class="btn2 "><i class="fa-solid fa-code-compare mr-3"></i>Source Code</a>
-                    </div>
-                  </div>
-                  <hr>
-            </div>   
+          <!-- Project 2 -->
+          <div class="project">
+            <div class="project-image">
+              <img src="img/calculator.png" alt="Calculator Project" />
+            </div>
+            <div class="project-details">
+              <h2>Calculator</h2>
+              <p class="">
+                I built a responsive, user-friendly calculator using HTML, CSS,
+                and JavaScript, supporting essential arithmetic operations like
+                addition, subtraction, multiplication, and division. This
+                project demonstrates my expertise in DOM manipulation, event
+                handling, and CSS design, showcasing my ability to develop
+                interactive web applications and solve problems effectively.
+              </p>
+              <div class="flex justify-start gap-6 flex-wrap mb-6">
+                <div
+                  class="w-15 h-auto p-1 text-center rounded-md shadow-md languageProject btn4"
+                >
+                  <i class="fa-brands fa-html5"></i>
+                </div>
+                <div
+                  class="w-15 h-auto p-1 text-center rounded-md shadow-md languageProject btn4"
+                >
+                  <i class="fa-brands fa-css"></i>
+                </div>
+                <div
+                  class="w-15 h-auto p-1 text-center rounded-md shadow-md languageProject btn4"
+                >
+                  <i class="fa-brands fa-js"></i>
+                </div>
+              </div>
+              <a
+                href="https://ishan01-lx.github.io/calculator-work/"
+                class="btn"
+                >Live Preview<i class="fa-solid fa-arrow-right-long ml-3"></i
+              ></a>
+              <a
+                href="https://github.com/ishan01-lx/calculator-work"
+                class="btn2"
+                ><i class="fa-solid fa-code-compare mr-3"></i>Source Code</a
+              >
+            </div>
+          </div>
+          <hr />
         </div>
+      </div>
     </section>
 
     <!-- CONTACT SECTION -->
     <section class="contact" id="contact">
-        <div class="max-width">
-            <h2 class="title">Contact me</h2>
-            <div class="contact-content">
-                <div class="column left">
-                    <div class="icons">
-                        <div class="row">
-                            <i class="fas fa-user"></i>
-                            <div class="info">
-                                <div class="head">Name</div>
-                                <div class="sub-title">Ishan Sitaula </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title">Kathmandu,Nepal</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-envelope"></i>
-                            <div class="info">
-                                <div class="head">Email</div>
-                                <div class="sub-title">ishan12chhetri@gmail.com</div>
-                            </div>
-                        </div>
-                    </div>
+      <div class="max-width">
+        <h2 class="title">Contact me</h2>
+        <div class="contact-content">
+          <div class="column left">
+            <div class="icons">
+              <div class="row">
+                <i class="fas fa-user"></i>
+                <div class="info">
+                  <div class="head">Name</div>
+                  <div class="sub-title">Ishan Sitaula</div>
                 </div>
-                <div class="column right">
-                    <div class="text">Message me</div>
-                    <form action="#">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" placeholder="Name" required>
-                            </div>
-                            <div class="field email">
-                                <input type="email" placeholder="Email" required>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <input type="text" placeholder="Subject" required>
-                        </div>
-                        <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
-                        </div>
-                        <div class="button-area">
-                            <button type="submit">Send message</button>
-                        </div>
-                    </form>
+              </div>
+              <div class="row">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="info">
+                  <div class="head">Address</div>
+                  <div class="sub-title">Kathmandu,Nepal</div>
                 </div>
+              </div>
+              <div class="row">
+                <i class="fas fa-envelope"></i>
+                <div class="info">
+                  <div class="head">Email</div>
+                  <div class="sub-title">ishan12chhetri@gmail.com</div>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="column right">
+            <div class="text">Message me</div>
+            <form action="#">
+              <div class="fields">
+                <div class="field name">
+                  <input type="text" placeholder="Name" required />
+                </div>
+                <div class="field email">
+                  <input type="email" placeholder="Email" required />
+                </div>
+              </div>
+              <div class="field">
+                <input type="text" placeholder="Subject" required />
+              </div>
+              <div class="field textarea">
+                <textarea
+                  cols="30"
+                  rows="10"
+                  placeholder="Message.."
+                  required
+                ></textarea>
+              </div>
+              <div class="button-area">
+                <button type="submit">Send message</button>
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
     <!-- FOOTER -->
     <footer>
-        <h2 class="foot">You can contact me on!</h2><br>
-        <div class="social-icons">
-            <a href="https://github.com/ishan01-lx" target="_blank"><img src="img/github.png" alt="GitHub"></a>
-            <a href="https://www.linkedin.com/in/ishan-sitaula-5468b3318/" target="_blank"><img src="img/li.webp" alt="LinkedIn"></a>
-            <a href="https://www.instagram.com/itz.lx.ishannn/" target="_blank"><img src="img/insta.png" alt="Instagram"></a>
-            <a href="https://www.facebook.com/ishan.sitaula.5" target="_blank"><img src="img/fb.png" alt="Facebook"></a>
-        </div><br>
-          <hr>
+      <h2 class="foot">You can contact me on!</h2>
+      <br />
+      <div class="social-icons">
+        <a href="https://github.com/ishan01-lx" target="_blank"
+          ><img src="img/github.png" alt="GitHub"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/ishan-sitaula-5468b3318/"
+          target="_blank"
+          ><img src="img/li.webp" alt="LinkedIn"
+        /></a>
+        <a href="https://www.instagram.com/itz.lx.ishannn/" target="_blank"
+          ><img src="img/insta.png" alt="Instagram"
+        /></a>
+        <a href="https://www.facebook.com/ishan.sitaula.5" target="_blank"
+          ><img src="img/fb.png" alt="Facebook"
+        /></a>
+      </div>
+      <br />
+      <hr />
 
-          <br>
-          <span>Created By <a>Ishan_</a> | <span class="far fa-copyright"></span> 2024 All rights reserved.</span>
+      <br />
+      <span
+        >Created By <a>Ishan_</a> | <span class="far fa-copyright"></span> 2024
+        All rights reserved.</span
+      >
     </footer>
-
-</body>
+  </body>
 </html>
