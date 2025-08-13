@@ -501,6 +501,8 @@ section .title::after {
   box-shadow: 0 4px 8px rgba(217, 213, 213, 0.864); /* Subtle shadow around the image */
   transition: all 0.5s ease; /* Smooth hover effect */
   cursor: pointer;
+  margin: 0 auto;
+  display: block;
 }
 .project-image img:hover {
   transform: scale(1.1); /* Slightly enlarge on hover */
@@ -522,6 +524,7 @@ section .title::after {
   font-size: 0.9rem; /* Increase paragraph font size for better readability */
   line-height: 1.6; /* Improve readability with proper line height */
   margin-bottom: 1.5rem; /* Add spacing below the paragraph */
+  
 }
 .btn {
   background-color: #052f8a; /* Bright blue button */
